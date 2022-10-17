@@ -84,7 +84,6 @@ const loadCatagories = () => {
   };
   const displayDetail = (datas) => {
     const { image_url, title, details, author, total_view } = datas;
-    console.log(datas);
     const modalTitle = document.getElementById("title");
     modalTitle.innerText = `${title}`;
     const detail = document.getElementById("details");
