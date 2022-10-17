@@ -47,7 +47,7 @@ const loadCatagories = () => {
                   </div>
                   <div>
                       <h3>${title}</h3>
-                      <p class="mt-5">${details.slice(0, 400)}</p>
+                      <p class="mt-5">${details.length>400?details.slice(0,400)+"...":details}</p>
                       <div class="d-flex  align-items-center justify-content-between  profile w-100">
                           <div class="d-flex gap-3 align-items-center">
                               <div>
