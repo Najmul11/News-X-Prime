@@ -81,3 +81,43 @@ const loadCatagories = () => {
     }
     loadSpinner();
   };
+  const loadDetail = (id) => {
+    const url = `https://openapi.programming-hero.com/api/news/${id}`;
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => displayDetail(data.data[0]))
+      .catch((err) => console.log(err));
+  };
+  const displayDetail = (datas) => {
+    const { image_url, title, details, author, total_view } = datas;
+    console.log(datas);
+    const modalTitle = document.getElementById("title");
+    modalTitle.innerText = `${title}`;
+    const detail = document.getElementById("details");
+    detail.innerHTML = `
+          <img src=${image_url} class="img-fluid">
+          <p class="mt-2">${details}</p>
+          <div class="d-flex  align-items-center justify-content-between">
+              <div class="d-flex gap-3 align-items-center">
+                  <div>
+                      <img src="${
+                        author.img
+                      }" alt="" class="rounded-circle author">
+                  </div>
+                  <div class="mt-3">
+                      <h5 class="">${
+                        author.name ? author.name : "Unknown Author"
+                      }</h5>
+                      <p>${author.published_date ? author.published_date : ""}</p>
+                      
+                  </div>
+              </div>
+              <div>
+                  <p class="mt-4 fw-semibold"><i class="fa-regular fa-eye"></i> ${
+                    total_view ?? "No data"
+                  }</p>
+              </div>
+          </div>
+      `;
+  };
+  loadCatagories();  
