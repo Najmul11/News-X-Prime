@@ -1,30 +1,36 @@
-body{
-    background: #acb6ac88;
+body {
+  background: #acb6ac88;
 }
 /*---------
 header section
 ------------  */
-.site-logo{
-    width: 75px;
-    height: 60px;
+.site-logo {
+  width: 75px;
+  height: 60px;
 }
 /* ----------
 catagory block
 -----------*/
-.catagories{
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgb(107, 114, 116), rgba(0, 0, 0, 0));
-    border-image-slice: 1;
-    border-top: 1px solid;
-    padding: 20px 0;
+.catagories {
+  border-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgb(107, 114, 116),
+    rgba(0, 0, 0, 0)
+  );
+  border-image-slice: 1;
+  border-top: 1px solid;
+  padding: 20px 0;
 }
-.btn-style:hover{
-    background-color: #0878f758;
-    color: #292828de;
+.btn-style:hover {
+  background-color: #0878f758;
+  color: #292828de;
 }
 /* ----------
 news block
 -----------*/
- .profile img,.author{
-    width: 50px;
-    height: 50px;
-} 
+.profile img,
+.author {
+  width: 50px;
+  height: 50px;
+}
