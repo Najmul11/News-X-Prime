@@ -32,7 +32,8 @@
                             <a class="nav-link active" href="#">News</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="qNa.html">Blog</a>
+                            <button type="button" class="btn border-0 mt-1" data-bs-toggle="modal"
+                                data-bs-target="#qnaModal">Blog</button>
                         </li>
                     </ul>
                     <img src="images/profile.png" alt="">
@@ -65,6 +66,37 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body" id="details">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- qNA modal -->
+            <div class="modal fade" id="qnaModal" tabindex="-1" aria-labelledby="qnaModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="qnaModalLabel">Q N A</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><b>1. What is the difference between var,let,const? </b><br> var variables can be
+                                re-declared and updated. let variables cant be re-declared but can be updated. Where as
+                                const variables cant be updated also cant re-declared.</p>
+                            <p><b>2. What is the difference arrow function and normal function? </b><br> we can get the
+                                same result as regular functions by writing a few lines of code using arrow functions.
+                                to point the differences,first is the syntex of both are different. <br> The behavior of
+                                'this' inside of an arrow function differs considerably from the regular function’s this
+                                behavior. arrow function does not have its own “this” keyword. <br> Arrow functions can
+                                never have duplicate named parameters, whether in strict or non-strict mode. <br> at .
+                            </p>
+                            <p><b>3.differene between map,forEach,filter,find? </b><br> using map we can loop throgh all
+                                the elements in an array and do founction with each of them. <br>forEach let us loop
+                                through all the elements in an array,it doesnt return any value. <br>filter also loop
+                                through all the elements in an array ,but while using filter we can pass condition,and
+                                it return the value fulfiiling condition. <br> find also loop through the elements of
+                                array,condition can be passed and it ruturns the first value which matches the
+                                condition. no matter how many lements fullfil the condition,it will always return the
+                                first value only </p>
                         </div>
                     </div>
                 </div>
