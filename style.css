@@ -4,7 +4,7 @@ body{
 /*---------
 header section
 ------------  */
-.site-logo,.profile{
+.site-logo{
     width: 75px;
     height: 60px;
 }
@@ -12,9 +12,6 @@ header section
 catagory block
 -----------*/
 .catagories{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgb(107, 114, 116), rgba(0, 0, 0, 0));
     border-image-slice: 1;
     border-top: 1px solid;
@@ -27,10 +24,6 @@ catagory block
 /* ----------
 news block
 -----------*/
- .profile{
-  position: absolute;
-  bottom: 10%;
-}
  .profile img,.author{
     width: 50px;
     height: 50px;
