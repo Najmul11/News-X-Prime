@@ -31,6 +31,7 @@ const loadCatagories = () => {
     }
   };
   const displayNews = (datas) => {
+    datas.sort((a1,a2)=>a2.total_view-a1.total_view);
     const newsFound = document.getElementById("message");
     newsFound.classList.remove("d-none");
     newsFound.innerHTML = `<h3 class=" text-center bg-white rounded py-3">${datas.length} recent news</h3>`;

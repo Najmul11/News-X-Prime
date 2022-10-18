@@ -1,1 +1,2 @@
-# b6-news-portal-assignment-Najmul11
+# live-site:https://newsxprime-api.netlify.app
+
